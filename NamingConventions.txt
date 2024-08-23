@@ -1,0 +1,107 @@
+Naming Conventions —>
+- component names - Pascal Case
+- ⁠variable names - camel case 
+- ⁠CSS style classnames - camel case 
+- ⁠function names - camel case 
+- ⁠folder names - lowercase
+- ⁠Git Branch name - lowercase
+- ⁠assets - lowercase
+#please use comments wherever necessary
+## Normal tags are in lowercase.
+
+Clone the React Project Repository:
+git clone https://github.com/D4-80593-meetvasani/railway-reservation-system.git
+
+Setting up the Workflow:
+
+Always start by pulling the latest changes from the main branch before you start working:
+
+git pull origin main
+
+Create a new branch for the component you are going to work on.
+
+Copy code
+git checkout -b ComponentName
+
+Adding Components:
+
+When creating a new component, use the arrow function syntax. A shortcut for creating a functional component is rfc.
+
+Always start with <> and end with </> for JSX fragments.
+
+// Example for creating a component named MyComponent
+
+// Type 'rfc' and press 'Tab' to generate the basic structure.
+
+import React from 'react';
+
+const MyComponent = () => {
+
+return (
+
+<>
+
+{/* Your component code here */}
+
+</>
+
+) ;
+
+} ;
+
+export default MyComponent ;
+
+Save your changes and commit them:
+
+git add .
+
+git commit -m "Add MyComponent"
+
+Push Changes to Your Branch:
+
+Push your changes to the branch you created:
+
+git push origin ComponentName
+
+Merge Changes:
+
+Once your work is complete, create a pull request to merge your branch into the main branch. Inform me so they I review and merge your changes.
+
+
+Folder Structure
+
+/src
+|-- components
+|   |-- aboutUs
+|   |   |-- AboutUs.jsx
+|   |
+|   |-- authentication
+|   |   |-- Login.jsx
+|   |   |-- Register.jsx
+|   |
+|   |-- booking
+|   |   |-- BookingSuccess.jsx
+|   |   |-- PassengerDetails.jsx
+|   |   |-- PaymentPage.jsx
+|   |
+|   |-- common
+|   |   |-- Footer.jsx
+|   |   |-- Header1.jsx
+|   |
+|   |-- landing
+|   |   |-- Landing.jsx
+|   |
+|   |-- train
+|   |   |-- TrainList.jsx
+|   |   |-- TrainManagement.jsx
+|   |
+|   |-- user
+|       |-- UserProfile.jsx
+|       |-- UserManagement.jsx
+|
+|-- assets
+|   |-- trainLogo.jpg
+|
+|-- App.jsx
+|-- index.js
+|-- style.css

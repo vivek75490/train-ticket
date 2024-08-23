@@ -1,0 +1,54 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upper {
+  flex-basis: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid #439efe;
+  flex-wrap: wrap;
+}
+.upperLeft {
+  flex-basis: 40%;
+}
+.upperRight {
+  flex-basis: 60%;
+  padding: 10px;
+}
+.inner {
+  padding: 10px;
+  border: 2px solid #439efe;
+  border-radius: 7px;
+}
+.lower {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+.card {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .upper{
+    flex-direction: column;
+  }
+  .upperLeft{
+    flex-basis: 100%;
+  }
+  .upperRight{
+    flex-basis: 100%;
+  }
+}
